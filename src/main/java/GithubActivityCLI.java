@@ -10,6 +10,7 @@ public class GithubActivityCLI {
 
                 try {
                        JSONArray events = GithubActivity.fetchUserActivity(args[0]);
+                       String filter = args[1];
                        GithubActivity.displayActivity(events);
                 } catch (Exception e) {
                         System.err.println(e.getMessage());
