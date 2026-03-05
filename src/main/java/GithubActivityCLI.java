@@ -1,4 +1,3 @@
-import com.sun.jdi.event.ExceptionEvent;
 import org.json.JSONArray;
 
 public class GithubActivityCLI {
@@ -9,7 +8,7 @@ public class GithubActivityCLI {
                 }
 
                 try {
-                       JSONArray events = GithubActivity.fetchUserActivity(args[0]);
+                       JSONArray events = new GithubActivity().fetchUserActivity(args[0]);
                        GithubActivity.displayActivity(events);
                 } catch (Exception e) {
                         System.err.println(e.getMessage());
