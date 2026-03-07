@@ -1,0 +1,6 @@
+[
+  {"type": "PushEvent", "repo": {"name": "simple85/Task-Tracker-CLI"}, "payload": {"commits": [{"sha": "a"}, {"sha": "b"}, {"sha": "c"}]}},
+  {"type": "IssuesEvent", "repo": {"name": "simple85/Weather-App"}, "payload": {"action": "opened"}},
+  {"type": "WatchEvent", "repo": {"name": "spring-projects/spring-boot"}, "payload": {"action": "started"}},
+  {"type": "CreateEvent", "repo": {"name": "simple85/Snake-Game"}, "payload": {"ref_type": "branch"}}
+]
